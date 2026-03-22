@@ -1,24 +1,25 @@
 # Discord IPC
-Java 25 library for interacting with locally running Discord instance without the use of JNI.  
-Currently, only supports retrieving the logged-in user and setting user's activity.  
-The library is tested on Windows, Linux and macOS.
+Java 21-25 библиотека для взаимодействия с локально запущенным Discord без использования JNI.
 
-# Credits
-Thanks meteordevelopment (https://github.com/MeteorDevelopment/discord-ipc) for source code
+На данный момент поддерживает получение информации о текущем пользователе и установку активности.
+
+Библиотека протестирована на Windows, Linux и macOS.
+
+# Благодарности
+Спасибо meteordevelopment (https://github.com/MeteorDevelopment/discord-ipc) за исходный код
 
 ## Gradle
 ```groovy
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
-    }
+}
 
 dependencies {
-    //1.3 requires >= 25 java; 1.2 requires 17—22 java
-    implementation implementation 'com.github.NBTPackets:discord-ipc:1.0'
-    implementation "com.google.code.gson:gson:2.8.9" // GSON is not included but required
+    implementation 'com.github.NBTPackets:discord-ipc:1.0'
+    implementation "com.google.code.gson:gson:2.8.9" // GSON не включён, но обязателен
 }
 ```
 
-## Examples
-For examples check out `example/src/main/java/example/Main.java`.  
+## Примеры
+Примеры использования находятся в `example/src/main/java/example/Main.java`.
