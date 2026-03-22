@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.NBTPackets:discord-ipc:1.0'
+    implementation 'com.github.NBTPackets:java-discord-ipc:1.0.0'
     implementation "com.google.code.gson:gson:2.8.9" // GSON не включён, но обязателен
 }
 ```
